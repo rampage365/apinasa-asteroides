@@ -51,4 +51,3 @@ A travez de este segundo ENDPOINT se obtiene un JSON con el cual el cual en el c
 | `keyAPI`      | `string` | **Required**. Llave de acceso para obtener informacion del API |
 
 Una vez obtenida dicha informacion la almacenamos en un array de objetos y podemos realizar un CRUD de manera LOCAL
->>>>>>> b0e7826 (add: first commit)
