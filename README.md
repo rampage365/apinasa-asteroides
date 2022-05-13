@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 # apinasa-asteroides
-=======
+
 # Portal de Asteroides
 
 ## En que consiste la aplicacion
