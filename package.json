@@ -1,0 +1,19 @@
+{
+  "name": "c.-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mainAsteroides.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^3.2.3"
+  }
+}

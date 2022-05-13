@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /*background: linear-gradient(120deg,#2980b9, #8e44ad);*/
+    background: linear-gradient(106deg,#a02003, #256dd9);
+    height: 100vh;
+    overflow: scroll;
+  }
+
+.main-general{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/*******************************
+START FORMULARIO AGREGAR DISCO
+********************************/
+
+h1{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    color: aliceblue;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.buscar-asteroides{
+    width: 40%;
+}
+
+
+
+.buscar-asteroides h1{
+    margin: 30% 5% 10% 5% ;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  }
+  
+  .center_horizontal{
+    padding: 2% 0% 2% 0%;
+  
+  }
+  
+  .inputs_center{
+    margin: 15% 15% 10% 15% ;
+    padding: 8% 5% 8% 5%;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  }
+  
+  form .txt_field{
+      position: relative;
+      border-bottom: 2px solid #adadad;
+      margin: 30px 0px 10px 0px;
+    }
+    .txt_field input{
+      width: 100%;
+      padding: 0 5px;
+      height: 40px;
+      font-size: 16px;
+      border: none;
+      background: none;
+      outline: none;
+    }
+    .txt_field label{
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      color: #adadad;
+      transform: translateY(-50%);
+      font-size: 16px;
+      pointer-events: none;
+      transition: .5s;
+      
+    }
+    .txt_field span::before{
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #2691d9;
+      transition: .5s;
+    }
+    .txt_field input:focus ~ label,
+    .txt_field input:valid ~ label{
+      top: -5px;
+      color: #2691d9;
+    }
+    .txt_field input:focus ~ span::before,
+    .txt_field input:valid ~ span::before{
+      width: 100%;
+    }
+    
+    /* input[type="button"] */
+    input[type="button2"]{
+     
+      text-align: center;
+      margin-top: 10px;
+      width: 100%;
+      height: 50px;
+      border: 3px solid;
+      background: #2691d9;
+      border-radius: 25px;
+      font-size: 18px;
+      color: #e9f4fb;
+      font-weight: 700;
+      cursor: pointer;
+      outline: none;
+    }
+   input[type="button2"]:hover{
+      border-color: #2691d9;
+      transition: .5s;
+    }
+/*******************************
+END FORMULARIO AGREGAR DISCO
+********************************/
+
+
+
+
+
+
+/************************************
+START AVISOS FORMULARIO AGREGAR DISCO
+*************************************/
+    .ocultar{
+        display:none ;
+    }
+
+    .mostrar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: rgb(185, 19, 19);
+        background-color: rgb(226, 224, 224);
+        opacity: 0.7;
+        width: 100%;
+        height: 80px;
+        font-weight: bold;
+        margin: 10px;
+    }
+
+    .ocultarerror{
+        display:none ;
+    }
+
+    .mostrarerror{
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: rgb(185, 19, 19);
+        background-color: rgb(226, 224, 224);
+        opacity: 0.7;
+        width: 100%;
+        height: 47px;
+        font-weight: bold;
+        padding: 10px;
+        margin-left:15px ;
+    }
+
+    .exito{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: rgb(8, 153, 73);
+        background-color: rgb(226, 224, 224);
+        opacity: 0.7;
+        width: 100%;
+        height: 55px;
+        font-weight: bold;
+        margin: 10px;
+    }
+
+    .div-aviso{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+/************************************
+END AVISOS FORMULARIO AGREGAR DISCO
+*************************************/
+
+
+/************************************
+START TABALS DE DATOS DE LOS DISCOS
+*************************************/
+    .campo-rigth{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .formulario-buscar{
+        width: 90%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        
+    }
+
+    input[type="button3"]{
+     
+        text-align: center;
+        
+        /*width: 50%;*/
+        height: 40px;
+        border: 3px solid;
+        background: #2691d9;
+        border-radius: 25px;
+        font-size: 16px;
+        color: #e9f4fb;
+        font-weight: 700;
+        cursor: pointer;
+        outline: none;
+      }
+     input[type="button3"]:hover{
+        border-color: #2691d9;
+        transition: .5s;
+      }
+
+      .div-boton-buscar-disco{
+        /*width: 40%;*/
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .div-boton-buscar-disco2{
+        /*width: 40%;*/
+        display: flex;
+        align-items: flex-end;
+      }
+
+
+      input[type="button4"]{
+     
+        text-align: center;
+        
+        /*width: 50%;*/
+        height: 40px;
+        border: 3px solid;
+        background: #e0840b;
+        border-radius: 25px;
+        font-size: 16px;
+        color: #e9f4fb;
+        font-weight: 700;
+        cursor: pointer;
+        outline: none;
+      }
+     input[type="button4"]:hover{
+        border-color: #e0840b;
+        transition: .5s;
+      }
+
+
+      .fondo-blanco{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 0% 11% 0% 1%;
+        padding: 1%;
+        /* background-color: #e9f4fb;
+        border-radius: 10px;
+        width: 90%;
+        margin: 5% 5% 5% 1%;
+        padding: 1%; */
+      }
+
+      .inputs_center2{
+        margin: 1% ;
+        padding:2%;
+        background: white;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+        display: flex;
+      }
+      
+      form .txt_field2{
+        position: relative;
+        width: 45%;
+        border-bottom: 2px solid #adadad;
+        margin: 10px 15px 0px 0px;
+        }
+        .txt_field2 input{
+          width: 100%;
+          padding: 0 5px;
+          height: 45px;
+          font-size: 16px;
+          border: none;
+          background: none;
+          outline: none;
+        }
+        .txt_field2 label{
+          position: absolute;
+          top: 50%;
+          left: 5px;
+          color: #adadad;
+          transform: translateY(-50%);
+          font-size: 16px;
+          pointer-events: none;
+          transition: .5s;
+          
+        }
+        .txt_field2 span::before{
+          content: '';
+          position: absolute;
+          top: 45px;
+          left: 0;
+          width: 0%;
+          height: 2px;
+          background: #2691d9;
+          transition: .5s;
+        }
+        .txt_field2 input:focus ~ label,
+        .txt_field2 input:valid ~ label{
+          top: -5px;
+          color: #2691d9;
+        }
+        .txt_field2 input:focus ~ span::before,
+        .txt_field2 input:valid ~ span::before{
+          width: 100%;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    .table-responsive{
+        width: 90%;
+        background-color: white;
+        /*margin: 5% 5% 5% 1% ;*/
+        padding: 1%;
+        margin-right: 4%;
+        background: white;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+    }
+
+    .tr-table-titulos{
+        width: 100%;
+        /* border-bottom: 2px solid #256dd9; */
+    }
+
+     .campos-table-nombre{
+        padding: 4px !important;
+    } 
+
+    .thead-table{
+        width: 100%;
+        background-color: #009688;
+        color: white;
+    }
+    .table-table{
+        width: 100%;
+    }
+
+    .titulos-table-id{
+        width: 12%;
+    }
+
+    .titulos-table-nombre{
+        
+        width: 15%;
+    }
+    .titulos-table-anio{
+        width: 28%;
+    }
+    .titulos-table-precio{
+        width: 20%;
+    }
+    .titulos-table-boton{
+        width: 25%;
+    }
+
+    .body-table{
+        width: 100%;
+        background-color: rgb(219 236 253 / 95%);
+        color: black;
+    }
+
+    .tr-table-campos{
+        height: 45px;
+        margin: 5px;
+    }
+
+
+
+    .botonBorrar{
+        margin-top: 5px;
+        width: 60%;
+        height: 30px;
+        border: 2px solid;
+        background: #c91313;
+        border-radius: 25px;
+        font-size: 13px;
+        color: #e9f4fb;
+        font-weight: 700;
+        cursor: pointer;
+        outline: none;
+      }
+      .botonBorrar:hover{
+        border-color: #db0d0d;
+        transition: .5s;
+      }
+
+/************************************
+END TABALS DE DATOS DE LOS DISCOS
+*************************************/

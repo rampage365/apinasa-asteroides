@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>PROYECTO DE DEVF</title>
+</head>
+<body>
+    <h1>TU PORTAL DE ASTEROIDES</h1>
+    <main id="main-general-id" class="main-general">
+
+        <div class="buscar-asteroides">
+            <form class="inputs_center" name="formagregar">
+              <h2>Consultar Asteroides Cercanos</h2>
+                <div class="txt_field ">
+                    <input type="date" id="dateStart" name="date-start"
+                    value="2018-07-22"
+                    min="1900-03-08" max="2200-11-26">
+                </div>
+      
+                <div class="txt_field ">
+                <input type="date" id="dateEnd" name="date-end"
+                value="2018-07-28"
+                min="1900-03-08" max="2200-11-26">
+                </div>
+              <!-- <div class="txt_field">
+                <input type="text" id="disc-name-id" name="disc-name" class="disc-name" required>  
+                <span></span>
+                <label>Disco</label>
+              </div>
+              <div class="txt_field ">
+                <input type="number" name="number-anio" class="number-anio" id="number-anio-id" min="1878" max="2022" required>
+                <span></span>
+                <label>Año del disco</label>
+              </div>
+
+              <div class="txt_field ">
+                <input type="number" name="number-precio" class="number-precio" id="number-precio-id" min="0.1" max="2000" required>
+                <span></span>
+                <label>Precio</label>
+              </div> -->
+      
+              <div id="div-aviso-id" class="div-aviso">
+                <div id="aviso-id" class="ocultar">
+                </div>
+              </div>
+              
+              <input class="boton-buscar-asteroides" type="button2" value="Buscar" onclick="buscarAsteroides()" >
+            </form>
+          </div>
+
+
+        <!-- <div class="campo-rigth">
+            <div class="fondo-blanco">
+                <div class="formulario-buscar">  
+                    <form class="inputs_center2" name="formbuscar">
+                        <div class="txt_field2">
+                            <input type="text" id="disc-buscar-id" name="disc-name" class="disc-buscar" required>  
+                            <span></span>
+                            <label>Nombre del disco</label>
+                        </div>
+                        <div id="div-boton-buscar-disco-id"   class="div-boton-buscar-disco">
+                            <input id="input-boton-buscar-disco" class="boton-buscar-disco" type="button3" value="Buscar" onclick="buscarDisco()">
+                        </div>
+                        <div id="div-boton-buscar-disco2-id" class="div-boton-buscar-disco2 ">
+                            <input id="input-boton-buscar-disco2" class="boton-buscar-disco2 ocultar" type="button4" value="Borrar" onclick="borrarBusqueda()">
+                        </div>
+                        <div id="div-aviso-buscar-id" class="div-aviso">
+                            <div id="aviso-buscar-id" class="ocultar">
+                            </div>
+                          </div>
+                    </form>
+                </div>               
+            </div> -->
+
+            
+            <div id="tabla-discos-id" class="table-responsive">
+                <table id="table-table-id" class="table-table">
+                    <thead class="thead-table">
+                        <tr class="tr-table-titulos">
+                            <th class="titulos-table-id">id</th>
+                            <th class="titulos-table-nombre">Nombre</th>
+                            <th class="titulos-table-anio">Primer Avistamiento</th>
+                            <th class="titulos-table-precio">Diametro (metros)</th>
+                            <th class="titulos-table-boton">Proximo Avistamiento</th>
+                        </tr>
+                    </thead>
+                    <tbody id="body-table-id" class="body-table">
+                        <!-- <tr id="0" class="tr-table-campos">
+                            <td id="id-table-id" class="campos-table-id">1</td>
+                            <td class="campos-table-nombre">Yeah Yeah Yeahs</td>
+                            <td class="campos-table-anio">2002</td>
+                            <td class="campos-table-precio">200</td>
+                            <td class="campos-table-boton"><input class="botonBorrar" type="button" value="Borrar" onclick="borrarDisco(0)"></td>
+                        </tr>
+                         -->
+                    </tbody>
+                </table>
+            </div>
+        </div>  
+
+    </main>
+    
+    
+    <script src="mainAsteroides.js"></script>
+</body>
+</html>
+
