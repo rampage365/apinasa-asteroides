@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# apinasa-asteroides
-=======
 El siguiente proyecto fue desarrollado para el modulo Kata JavaScript Avanzado, ya que en dicho modulo se postulo este proyecto, y no el de la Trivia App del campus.
->>>>>>> e5d8453 (add: Triviapp)
 
 # Portal de Asteroides
 
